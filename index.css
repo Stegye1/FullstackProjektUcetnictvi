@@ -1,0 +1,46 @@
+.App {   
+    text-align: center;
+    background-color: #eeeadb;
+    padding: 15px 0px
+  }
+
+  .navbar-background {              /*nastavení pozadí pod navigačními tlačítky - stejné jako zbytek App */
+    background-color: #eeeadb !important; /* změna barvy */
+  }
+ 
+  .navbar-nav {         /* nastavuje navigační tlačítka doprostřed */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100%; /* šířka zajistí, že se obsah rozloží napříč řádkem */
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 10px;
+    text-align: center; /* Zarovnání položek uvnitř nav-item na střed */
+    width: 15%; /* Rozdělí prostor mezi položkami*/
+  }
+  
+  
+  .navbar-nav .nav-link {
+    padding: 0 10px; /* Přidání vnitřního odsazení tlačítkům navigace */
+    width: 100%; 
+    text-align: center; /* Zarovnání textu uvnitř tlačítek navigace na střed */
+  }
+  
+  .bottom-flash-message {       /* zajistí, aby se flash message zobrazovala ve viditelné oblasti dole uprostřed*/
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);    /* posunutí o 50% své šířky doleva 
+    z-index: 9999; /* zajistí, že bude navrchu (nad jinými komponentami asi)*/
+}
+
+.nav-item button  {       /* zaoblené rohy tlačítek navigace*/
+  border-radius: 5px;
+}
+
+.statistics {   /* aby dole pod statistikami nebyl bílý pruh*/
+  height: 100vh;
+}
